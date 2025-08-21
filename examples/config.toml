@@ -1,0 +1,48 @@
+log_level = "Debug"
+coin = "Bitcoin"
+period = 365            # days
+initial_btc = 100.0
+initial_usd = -1        # Použi -1 pre rovnaké množstvo ako je BTC
+allocation = 0.1        # 1.0 = 100%
+
+perf_fee_cycles = 7     # days
+perf_fee_rate = 0.33    # 1.0 = 100%
+
+
+take_profit_btc = 0.1   # (1.0 = 100%) nad počiatočný kapitál dávam bokom
+stop_lose_btc = 0.3     # (1.0 = 100%) kapitálu môžem stratiť
+
+take_profit_usd = 0.1   # (1.0 = 100%) nad počiatočný kapitál dávam bokom
+stop_lose_usd = 0.75    # (1.0 = 100%) kapitálu môžem stratiť
+
+ema_short = 10          # days
+ema_long = 30           # days
+
+rsi_period = 12         # days
+rsi_oversold = 25       # 100 = 100%
+rsi_overbought = 75     # 100 = 100%
+
+grid_levels = 10
+grid_range = 0.1        # 1 = 100%
+
+dip_pct = 5             # 100 = 100%
+
+tp_pct = 10             # 100 = 100%
+buyback_pct = 10        # 100 = 100%
+
+weight_ema = 0.5        # (1 = 100%) of (allocation * portfolio)
+weight_rsi = 0.1        # (1 = 100%)
+weight_grid = 0.2       # (1 = 100%)
+weight_buy_dip = 0.1    # (1 = 100%)
+weight_tp_o_bb = 0.1    # (1 = 100%)
+signal_threshold = 0.3  # (1 = 100%)
+
+cex = "simulate"
+cex_api_key = "f70b7284-6f85-456b-9779-281239be0143"
+cex_api_secret = "1C339B3CB58C4DFB5C02FCCA26F8A1E2"
+cex_api_passphrase = "Simple@OKX_3000"
+
+simulate_file = "./data/data_sol.json"
+simulate_day = 20230101
+simulate_cycles = 365
+#simulate_day = 20171207
